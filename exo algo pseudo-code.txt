@@ -1,0 +1,444 @@
+exercice 1          
+
+B <- 4              
+A <- 3               
+
+exercice 2
+
+A <- 2
+B <- 3
+C <- 1
+
+ exercice 3
+
+A <- 6
+B <- 2
+
+exercice 4
+
+A <- 13
+B <- 13
+C <- 13
+
+exercice 5
+
+A <- 2
+B <- 2
+non* / non, mais la valeur passe a 5 
+
+exercice 6
+A <- 5
+B <- 2
+
+c <- A
+A <- B
+B <- C 
+
+exercice 7
+
+A <- 5
+B <- 8
+C <- 4
+
+D <- A
+A <- C
+C <- B
+B <- D
+
+exercice 8 
+
+C <- error
+
+exercice 9 
+
+42312
+
+
+/********************************************/
+
+Algo lecture / ecriture
+
+exercice 1 
+
+231
+462
+            ///////////
+exercice 2 
+
+variable nombre  <-  entier
+DEBUT
+ecrire "donner moi un chiffre"
+lire nombre               
+ecrire nombre*nombre ( ou alors on peut faire :
+                         varibale resultat <- nombre*nombre    
+                        ecrire resultat )
+FIN
+
+            ///////////
+exerccse 3
+
+variable prixHT <-  nb 
+variable nbArticle <-  nb 
+variable tauxTVA <-  nb 
+
+DEBUT
+
+lire prixHT,nbArticle,tauxTVA
+prixTTC <- prixHT*nbArticle+tauxTVA
+ecrire prixTTC
+
+FIN
+
+            ///////////
+exercice 4 
+
+variable string  <-  "belle marquise,vos beaux yeux me font mourir "
+variable string2  <-  "de rire"
+variable string3  <-  "d'amour"
+variable string4  <-  "ennuie"
+variable string5  <-  "de peur"
+
+DEBUT
+
+lire string,string2,string3,string4,string5
+ecrire (string & string2),(string & string3),(string & string4),(string & string5)
+
+FIN
+
+/***************************************************/
+
+algo tests
+
+exercice 1 
+variable nombre entier
+DEBUT
+
+ecrire "donner moi un nombre "
+nombre  <-  nb
+lire nombre 
+si (nb < 0)
+alors 
+ecrire "nombre negatif"
+sinon
+ecrire "nombre positif"
+
+FIN
+            ///////////
+exercice 2 
+
+variable nb1 <-  nb
+variable nb2 <-  nb
+
+DEBUT
+ecrire "ecrire deux nombres"
+lire nb1,nb2
+si ( nb1<0 et nb2<0 ) ou  (nb1>0 et nb2>0)
+alors 
+ecrire "nombre negatif"
+sinon
+ecrire "nombre positif"
+
+FIN
+            ///////////
+exercice 3 
+
+variable nom1 <- caractere
+variable nom2 <- caractere
+variable nom3 <- caractere
+
+DEBUT
+
+ecrire "ecrire 1er noms"
+lire nom1
+ecrire "ecrire 2er noms"
+lire nom2
+ecrire "ecrire 3er noms"
+lire nom3
+si (nom1<nom2) & ( nom2<nom3) 
+alors 
+ecrire "nom dans l'ordre alhpabetique 
+sinon
+ecrire "nom dans le desordre"  
+
+FIN
+
+            ///////////
+            
+exercice 4
+
+variable nb1 <- entier 
+
+DEBUT
+
+lire nb1
+si nb1<0 
+alors 
+ecrire "nombre negatif"
+sinon si nb1 <- 0 
+ecrire "nombre vaut 0"
+sinon
+ecrire "nombre positif"
+
+FIN
+            ///////////
+exercice 5 
+
+variable nb1 <-  nb
+variable nb2 <-  nb
+
+DEBUT
+
+lire nb1,nb2
+si (nb1<0) ET (nb2<0) 
+ALORS 
+ecrire "produit negatif"
+SINON SI(nb1=0) OU (nb2=0)
+ecrire "produit null "
+SINON
+ecrire "nombre positif"
+
+FIN
+            ///////////
+exercice 6
+
+variable age <- nb 
+
+DEBUT
+
+lire age
+SI age <6
+ecrire "n'entre pas dans une catégorie grandit encore"
+SINON SI pour age >=6
+ecrire "poussin"
+SINON SI  pour age >=8
+ecrire "poussin" 
+SINON SI pour age >=10 
+ecrire "poussin" 
+SINON pour age >=12
+ecrire "poussin" 
+
+FIN
+
+//////////////////////////////////////////
+
+structure algorithmique EN PSOEUDO CODE
+
+exemple 
+ 
+
+structure 
+déclarer les varibles et leurs types = (exemple) variable nomDeLaVariable <- string
+DEBUT d'algoritme 
+suite d'instruction
+FIN  
+
+on crée un algo qui demande un chiffre a l'utilisateur
+
+varibale nb <- entier 
+DEBUT 
+ecrire "Donner moi un chiffre"
+lire nb (c'est a dire on attribue a la variable nb,la valeur donner par l'utilisateur)
+ecrire nb 
+FIN
+
+
+/***********************************************/
+
+ALGO BOUCLE 
+
+exo 1 
+
+variable nombre <- entier ( 1 à 3 )
+
+DEBUT
+variable nombre en entier 
+ECRIRE "choisis un nombre  "
+TANT QUE (nombre <1 OU que >3)
+LIRE nombre 
+SI (nombre <1 OU nombre >3) ALORS
+ECRIRE "saisis eronné
+FIN
+
+exo 2
+
+variable nombre en entier
+
+DEBUT
+nombre <- 0
+ECRIRE "choisis un nombre entre 10 et 20"
+
+TANT QUE (nombre < 10 ou nombre > 20 )
+LIRE nombre 
+SI nombreUtilisateur > 20 ALORS
+ECRIRE "Plus petit !"
+SINON SI nombreUtilisateur < 10 ALORS
+ECRIRE "Plus grand !"
+FIN SI
+FIN TANT QUE  
+FIN
+
+
+exo 3 
+
+varibale nombre i en entier
+variable nombre j en entier
+DEBUT
+ECRIRE "choisis un nombre"
+POUR (variable i <- 1 ; i < 11 ; i++) ALORS
+variable j = nombre + i 
+ECRIRE "j"
+FIN
+
+exo 4
+
+variable nombre <- entier
+
+DEBUT
+ECRIRE " choisis un chiffre "
+LIRE nombre
+POUR ( variable i <- 1; i < 11 ; i++){ ALORS
+    variable table = variable nombre * i
+ECRIRE ("table de"+ nombre + " : "+nombre+ " x "+ i + " = " + table )   
+}
+FIN
+
+exo 5 
+
+variable nombre, i , somme en entier
+DEBUT
+somme <- 0
+ECRIRE " choisis un chiffre "
+LIRE "nombre"
+POUR (variable i = 1 ; i == nombre ; i++)
+ somme <- somme+i
+FIN POUR
+ECRIRE " somme"
+FIN 
+
+exo 6 
+
+variable nombre,i,factorielle en entier
+variable facorielle en entier <- 1
+DEBUT
+
+ECRIRE " choisis un chiffre "
+LIRE nombre
+POUR ( i <- 2 ; i == nombre ; i ++)
+factorielle <- facorielle*i
+FIN POUR 
+ECRIRE "factorielle"
+FIN
+
+exo 7 
+
+
+variable grandNombre,nombre,index,i en entier
+grandNombre <- 0 
+index <- i
+DEBUT
+
+POUR (i = 1 ; i < 21 ; i++ )ALORS
+ECRIRE "Entre le nombre"
+LIRE nombre,i
+index <- 0
+SI grandNombre<nombre ALORS
+grandNombre <- nombre 
+SI index < i ALORS
+index <- i
+// grandNombre <- nombre 
+FIN SI 
+FIN POUR
+ECRIRE "grandNombre"
+// ECRIRE "grandNombre"+index
+FIN 
+
+exo 8
+
+variable grandNombre,nombre,index
+grandNombre <- 0 
+index <- i 
+DEBUT
+TANT QUE nombre <> 0 FAIRE            //    c'est une boucle Do....while !
+ECRIRE "entre un nombre"
+LIRE nombre,i  
+SI  grandNombre < nombre ALORS
+grandNombre <- nombre 
+FIN SI  
+FIN TANT QUE
+FIN 
+
+exo 9
+
+variable total ,payer ,prix ,rendu , billet10 ,billet5 ,piece1 ,i en entier 
+i <- 0
+total <- 0
+payer <- 0
+renduMonnaie <- 0
+billet10 <- 0
+billet5 <- 0
+piece1 <- 0
+i <- 0
+DEBUT
+
+TANT QUE (  prix <> 0) ALORS           //  c'est une boucle Do....while !
+LIRE prix
+total <- total + prix  
+LIRE total
+ECRIRE "paye"+ total // 320
+LIRE payer           //351
+renduMonnaie <- payer - total   // 29
+ECRIRE renduMonnaie 
+LIRE renduMonnaie
+TANT QUE renduMonnaie <> 0 ;  ALORS
+    SI  renduMonnaie  >= 10  FAIRE
+        renduMonnaie - 10
+    SI  renduMonnaie >= 5    FAIRE
+        renduMonnaie - 5 
+    SI  renduMonnaie >= 1   FAIRE
+        renduMonnaie - 1 
+FIN TANT QUE 
+FIN SI 
+ECRIRE " rendre  "+billet10 + " billet de 10 "+ billet5 +" billet de 5 et "+ piece + " piece de 1 "
+FIN                    2                             1                         4           
+
+exo 10
+
+variable n,px,y en entier
+n <-  (3 à 5)
+p <- ( 3 a 5 ) 
+
+x <- 0
+y <- a 
+
+DEBUT 
+LIRE n  , p 
+X <- n ! / (n - p) !
+Y <- n ! / (p ! * (n – p) !)
+LIRE 
+X , Y 
+ECRIRE "Dans l’ordre : une chance sur X de gagner"
+ECRIRE "Dans le désordre : une chance sur Y de gagner"
+FIN
+
+
+variable n,px,y en entier
+variable ordre , desordre en array 
+n <- 0
+p <- 0 
+x <- 0
+y <- 0
+
+DEBUT
+LIRE n,p
+POUR (i <- 32 ; i < 6 ; i++) 
+ordre <-n+i 
+desordre<-n+i
+FAIRE 
+X <- ordre[i] ! / (ordre[i] - p) !
+Y <- n ! / (p ! * (n – p) !)
+odre <- ]
+desordre <- 
+FIN POUR 
+ECRIRE "Dans l’ordre : une chance sur X de gagner"
+ECRIRE "Dans le désordre : une chance sur Y de gagner"
+FIN 
