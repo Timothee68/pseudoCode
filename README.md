@@ -1,1 +1,1 @@
-# pseudoCode
+# pseudoCode exercise
